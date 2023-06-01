@@ -1,0 +1,80 @@
+@import 'nullstyle.scss';
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container{
+    max-width: 250px;
+    padding: 15px 15px;
+    margin: 150px auto;
+    box-sizing: content-box;
+	background-color: #000000;
+	box-shadow: 0px 0px 8px black;
+}
+
+
+.main {
+
+		&__container {
+			border-radius: 20px;
+		}
+
+		&__body {
+		}
+
+		&__buttons {
+            display: grid;
+			gap: 4px;
+			grid-template-columns: repeat(4, 60px);
+			grid-template-rows: repeat(5, 60px);
+			justify-items: center;
+		}
+
+		&__output{
+			max-width: 100%;
+			min-height: 65px;
+			padding: 5px;
+			font-size: 40px;
+			margin: 20px 0px;
+			text-align:right;
+			background-color: #000;
+			color: #fff;
+		}
+}
+.output{
+	font-size: 30px;
+}
+.button{
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: 400;
+	background-color: #5c5c5c;
+	color: #fff;
+	width: 60px;
+	height: 60px;
+}
+.button:hover{
+	filter: brightness(120%);
+}
+
+.button:active{
+	filter: brightness(90%);
+}
+
+.bg-grey {
+	background-color: #bbb;
+	color: #000;
+}
+
+.bg-orange {
+	background-color: #f79618;
+}
+
+.null {
+	grid-column-start: span 2;
+	width: 100%;
+	border-radius: 34px;
+}
